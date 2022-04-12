@@ -11,6 +11,7 @@ with open("weather_data.csv") as data_file:
         if row[1] != "temp":
             temperatures.append(int(row[1]))
     print(temperatures)
+    
 print("\nCSV files using Pandas:\n")
 data1 = pandas.read_csv("weather_data.csv")
 print(data1)
